@@ -3,7 +3,7 @@
     color: var(--text-primary) !important;
     font-family: var(--font-sans);
     /* font-weight: bold; */
-    font-size: var(--text-base);
+    font-size: var(--text-desc-lg);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
   }

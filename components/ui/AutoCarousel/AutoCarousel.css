@@ -1,0 +1,112 @@
+.auto-carousel {
+  margin-bottom: 48px;
+}
+
+/* Keep the carousel frame minimal and on-palette */
+.auto-carousel .carousel {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--surface);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.auto-carousel .carousel-item {
+  position: relative;
+}
+
+/* Fixed, clearly-defined size for the carousel media (image or video) */
+.auto-carousel-media {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  background-color: var(--surface-hover);
+}
+
+/* Caption overlays the bottom of the media */
+.auto-carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2.5rem 1.75rem 1.75rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.55) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.auto-carousel-tag {
+  font-family: var(--font-sans);
+  font-size: var(--text-caption);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.auto-carousel-name {
+  font-family: var(--font-sans);
+  font-size: var(--text-header);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.auto-carousel-desc {
+  font-family: var(--font-sans);
+  font-size: var(--text-desc-lg);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  max-width: 640px;
+}
+
+/* Controls — clearly visible, high-contrast circular buttons */
+.auto-carousel .carousel-control-prev,
+.auto-carousel .carousel-control-next {
+  width: auto;
+  opacity: 1;
+}
+
+.auto-carousel .carousel-control-prev:hover,
+.auto-carousel .carousel-control-next:hover {
+  opacity: 1;
+}
+
+.auto-carousel .carousel-control-prev-icon:hover,
+.auto-carousel .carousel-control-next-icon:hover {
+  background-color:var(--accent)
+
+}
+/* Indicators */
+.auto-carousel .carousel-indicators {
+  margin-bottom: 0.5rem;
+}
+
+.auto-carousel .carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--border);
+  opacity: 1;
+}
+
+.auto-carousel .carousel-indicators .active {
+  background-color: var(--accent);
+}
+
+@media only screen and (max-width: 768px) {
+  .auto-carousel-name {
+    font-size: var(--text-subheader);
+  }
+
+  .auto-carousel-caption {
+    padding: 2rem 1.25rem 1.25rem;
+  }
+}

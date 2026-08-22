@@ -103,22 +103,6 @@
   }
 }
 
-/* Primary Button */
-.btn-primary-custom {
-  background-color: var(--button-bg) !important;
-  border-color: var(--button-bg) !important;
-  color: var(--button-text) !important;
-  font-family: var(--font-sans);
-  font-weight: 600;
-  border-radius: 4px;
-}
-
-.btn-primary-custom:hover {
-  background-color: transparent !important;
-  border-color: var(--button-bg) !important;
-  color: var(--button-bg) !important;
-}
-
 /* Outline Button */
 .btn-outline-custom {
   background-color: transparent !important;

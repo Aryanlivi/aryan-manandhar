@@ -2,7 +2,7 @@
 
 import { Row, Col } from "react-bootstrap";
 import { software, sections } from "@/data/site";
-import SoftwareCarousel from "./SoftwareCarousel";
+import AutoCarousel from "@/components/ui/AutoCarousel/AutoCarousel";
 import SoftwareCard from "./SoftwareCard";
 import "./Software.css";
 
@@ -11,6 +11,19 @@ export default function Software() {
   const cards = [...software]
     .sort((a, b) => Number(b.starred ?? false) - Number(a.starred ?? false))
     .slice(0, 3);
+
+  // Featured items become carousel slides (video or image).
+  const slides = software
+    .filter((s) => s.featured)
+    .slice(0, 3)
+    .map((s) => ({
+      src: s.video ?? s.image,
+      type: (s.video ? "video" : "image") as "video" | "image",
+      alt: `${s.name} preview`,
+      tag: s.tagline,
+      title: s.name,
+      description: s.description,
+    }));
 
   return (
     <section id="projects" className="section">
@@ -21,7 +34,7 @@ export default function Software() {
         </a>
       </div>
 
-      <SoftwareCarousel />
+      <AutoCarousel slides={slides} />
 
       <Row className="g-4">
         {cards.map((item) => (

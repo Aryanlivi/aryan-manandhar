@@ -11,7 +11,7 @@
 }
 
 .software-card:hover {
-  border-color: var(--teal) !important;
+  border-color: var(--accent) !important;
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
 }
@@ -27,7 +27,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  color: var(--teal);
+  color: var(--accent);
   background-color: var(--surface-hover);
   border: 1px solid var(--border);
 }
@@ -40,16 +40,16 @@
 .software-card-tag {
   display: inline-block;
   font-family: var(--font-sans);
-  font-size: var(--text-xs);
+  font-size: var(--text-caption);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: var(--accent);
   margin-bottom: 0.5rem;
 }
 
 .software-card-title {
   font-family: var(--font-sans);
-  font-size: var(--text-lg);
+  font-size: var(--text-subheader);
   font-weight: 700;
   color: var(--text-primary) !important;
   margin-bottom: 0.5rem;
@@ -57,7 +57,7 @@
 
 .software-card-desc {
   font-family: var(--font-sans);
-  font-size: var(--text-sm);
+  font-size: var(--text-desc);
   line-height: 1.6;
   color: var(--text-secondary) !important;
   margin-bottom: 0;
@@ -86,8 +86,8 @@
 }
 
 .software-card-github:hover {
-  color: var(--teal) !important;
-  border-color: var(--teal);
+  color: var(--accent) !important;
+  border-color: var(--accent);
 }
 
 .software-card-checkout {

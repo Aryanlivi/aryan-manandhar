@@ -1,5 +1,3 @@
-import { featuredProjects, stack } from "@/data/projects";
-import styles from "@/app/globals.css";
 import Intro from '@/components/layout/Intro/Intro';
 import About from "@/components/layout/About/About";
 import Experience from "@/components/layout/Experience/Experience";

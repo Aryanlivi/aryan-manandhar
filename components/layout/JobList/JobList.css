@@ -1,11 +1,51 @@
+/* Tab list — react-bootstrap pills */
+.joblist-tabs {
+  gap: 4px;
+}
+
+.joblist-tabs .nav-link {
+  font-family: var(--font-sans);
+  font-size: var(--text-desc);
+  color: var(--text-secondary);
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.joblist-tabs .nav-link:hover {
+  color: var(--accent);
+  background-color: var(--surface-hover);
+}
+
+.joblist-tabs .nav-link.active {
+  color: var(--accent);
+  font-weight: 600;
+  background-color: var(--surface-hover);
+}
+
+/* Content panel */
 .joblist-panel {
   max-width: 680px;
+  padding: 8px 0;
+}
+
+.joblist-role {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-header);
+  font-weight: 700;
+  color: var(--text-primary);
 }
 
 .joblist-company {
   color: var(--accent);
-  font-size: var(--text-header);
   font-weight: 500;
+}
+
+.joblist-meta {
+  margin: 4px 0 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-desc);
+  color: var(--text-muted);
 }
 
 .joblist-highlights {
@@ -39,7 +79,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .joblist-role {
+    font-size: var(--text-desc);
+  }
+
   .joblist-highlight {
-    font-size: var(--text-subheader);
+    font-size: var(--text-desc);
   }
 }
