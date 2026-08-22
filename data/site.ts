@@ -195,7 +195,7 @@ export const software: Software[] = [
     tagline: "Computer Vision",
     description:
       "Real-time exercise tracking app developed for KIST Hackathon using MediaPipe, React, DRF, and PostgreSQL.",
-    image: "/assets/images/BouncyBean.png",
+    image: "/assets/images/CatapultGodot.png",
     github: "https://github.com/Aryanlivi",
     demo: "#",
   },
