@@ -1,0 +1,35 @@
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-description {
+  font-family: var(--font-sans);
+  color: var(--text-secondary);
+  font-size: var(--text-md);
+  line-height: 1.8;
+  text-align: left;
+  margin: 0;
+}
+
+.about-description p {
+  margin-bottom: 1.25rem;
+}
+
+.about-description a,
+.about-description b {
+  font-size: var(--text-md);
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-description {
+    font-size: var(--text-base);
+  }
+
+  .about-description a,
+  .about-description b {
+    font-size: var(--text-base);
+  }
+}

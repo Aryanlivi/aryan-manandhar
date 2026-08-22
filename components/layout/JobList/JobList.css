@@ -1,0 +1,44 @@
+.joblist-panel {
+  max-width: 680px;
+}
+
+.joblist-company {
+  color: var(--teal);
+  font-weight: 500;
+}
+
+.joblist-highlights {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.joblist-highlight {
+  position: relative;
+  padding-left: 28px;
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Round bullet marker */
+.joblist-highlight::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--teal);
+}
+
+@media only screen and (max-width: 600px) {
+  .joblist-highlight {
+    font-size: var(--text-base);
+  }
+}
