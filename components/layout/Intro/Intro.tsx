@@ -6,6 +6,7 @@ import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import { intro } from '../../../data/site';
 import './Intro.css';
+import AboutSection from '../About/About';
 
 export default function IntroSection() {
   const fullName = intro.name;
@@ -41,6 +42,7 @@ export default function IntroSection() {
             <span className="intro-name-text">{typed}</span>
           </h1>
           <p className="intro-tagline">{intro.tagline}</p>
+          <AboutSection/>
           <div className="intro-actions">
             <Button
               href={intro.cta.href}

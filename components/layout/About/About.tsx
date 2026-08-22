@@ -24,15 +24,10 @@ function renderParagraph(paragraph: AboutParagraph) {
 
 export default function AboutSection() {
   return (
-    <section id="about" className="section">
-      <div className="section-header">
-        <span className="section-title">{sections.about.title}</span>
-      </div>
       <div className="about-description">
         {about.paragraphs.map((paragraph, i) => (
           <p key={i}>{renderParagraph(paragraph)}</p>
         ))}
       </div>
-    </section>
   );
 }

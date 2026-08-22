@@ -49,7 +49,7 @@ export const sections = {
 
 export const intro = {
   name: "Aryan Manandhar",
-  tagline: "Distributed System/Infrastructure Engineer . Mobile/Game Developer . Computer Engineer",
+  tagline: "Distributed System & Infrastructure Engineer . Mobile/Game Developer . Computer Engineer",
   cta: {
     label: "Say Hi",
     href: "mailto:aryanliviwork@gmail.com",

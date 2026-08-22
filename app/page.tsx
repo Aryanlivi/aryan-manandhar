@@ -10,7 +10,6 @@ export default function HomePage() {
     <div className="App">
       <div className="root-container">
         <Intro/>
-        <About/>
         <Experience/>
         <Software/>
       </div>
