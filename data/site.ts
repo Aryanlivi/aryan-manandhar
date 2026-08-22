@@ -70,7 +70,7 @@ export const about = {
       text: `I am currently a Software Engineer at {monkeybyte}, where I help build mobile health apps to track personal health and compete in Challenges.Furthermore, 
       I Fix Legacy Code, Optimize Game Systems.In my free time, I play Futsal , train Calisthenics.`,
       links: [
-        { text: "monkeybyte", href: "https://www.google.com/" },
+        { text: "Monkeybyte", href: "https://www.google.com/" },
       ],
     },
   ] as AboutParagraph[],
@@ -109,7 +109,7 @@ export const experience: ExperienceItem[] = [
 
 export type Software = {
   name: string;
-  tagline: string;
+  tagline?: string;
   description: string;
   image: string;
   github: string;
@@ -128,10 +128,11 @@ export type Software = {
 export const software: Software[] = [
   {
     name: "Habitual",
-    tagline: "Productivity",
+    // tagline: "Productivity",
     description:
       "A habit tracking app with a focused dashboard, streaks, and simple routine planning.",
     image: "/assets/images/Project.png",
+    video:"/assets/videos/LeftPunch.mp4",
     github: "https://github.com/aryanlivi",
     demo: "#",
     featured: true,

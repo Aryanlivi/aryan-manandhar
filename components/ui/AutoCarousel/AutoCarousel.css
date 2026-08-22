@@ -46,12 +46,12 @@
   font-size: var(--text-caption);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--text-primary);
 }
 
 .auto-carousel-name {
   font-family: var(--font-sans);
-  font-size: var(--text-header);
+  font-size: var(--text-title);
   font-weight: 700;
   color: #ffffff;
   margin: 0;
@@ -59,7 +59,7 @@
 
 .auto-carousel-desc {
   font-family: var(--font-sans);
-  font-size: var(--text-desc-lg);
+  font-size: var(--text-header);
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
   margin: 0;

@@ -31,7 +31,7 @@ export default function SoftwareCard({ item }: { item: Software }) {
         </a>
         <Button
           href={item.demo}
-          variant="outline-custom"
+          variant="outline-light"
           size="sm"
           className="software-card-checkout"
         >
