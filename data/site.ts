@@ -155,7 +155,7 @@ export const software: Software[] = [
     tagline: "Mobile App",
     description:
       "A futsal opponent finder mobile app developed with Flutter, Django, PostgreSQL, Redis, and Google Maps API.",
-    image: "/assets/images/Project.png",
+    image: "/assets/images/DoodleWhat.png",
     github: "https://github.com/Aryanlivi",
     demo: "#",
     featured: true,
@@ -166,9 +166,9 @@ export const software: Software[] = [
     tagline: "Game",
     description:
       "A Global Game Jam project built with Godot to promote Nepali culture, featured on itch.io.",
-    image: "/assets/images/Project.png",
+    image: "/assets/images/HealthChallenges.png",
     github: "https://github.com/Aryanlivi",
-    demo: "https://itch.io",
+    demo: "https://apps.apple.com/us/app/health-challenges/id6743952494",
     featured: true,
     starred: true,
   },
@@ -177,7 +177,25 @@ export const software: Software[] = [
     tagline: "Computer Vision",
     description:
       "Real-time exercise tracking app developed for KIST Hackathon using MediaPipe, React, DRF, and PostgreSQL.",
-    image: "/assets/images/Project.png",
+    image: "/assets/images/BouncyBean.png",
+    github: "https://github.com/Aryanlivi",
+    demo: "#",
+  },
+  {
+    name: "Proj X",
+    tagline: "Computer Vision",
+    description:
+      "Real-time exercise tracking app developed for KIST Hackathon using MediaPipe, React, DRF, and PostgreSQL.",
+    image: "/assets/images/GalacticPatrol.png",
+    github: "https://github.com/Aryanlivi",
+    demo: "#",
+  },
+  {
+    name: "Proj Y",
+    tagline: "Computer Vision",
+    description:
+      "Real-time exercise tracking app developed for KIST Hackathon using MediaPipe, React, DRF, and PostgreSQL.",
+    image: "/assets/images/BouncyBean.png",
     github: "https://github.com/Aryanlivi",
     demo: "#",
   },
