@@ -30,14 +30,18 @@ const NavBar = () => {
       }
     };
 
+    // Close the mobile menu first so the body scroll lock is released
+    // (the unlock effect restores the scroll position) before we scroll.
+    setExpanded(false);
+
     if (window.location.pathname !== "/") {
       router.push("/");
       // Wait for the home page to render before scrolling.
-      setTimeout(scroll, 150);
+      setTimeout(scroll, 300);
     } else {
-      scroll();
+      // Wait for the body unlock effect to finish restoring scroll position.
+      setTimeout(scroll, 50);
     }
-    setExpanded(false);
   };
 
 

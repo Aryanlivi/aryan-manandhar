@@ -40,6 +40,13 @@
       padding: 12px 0;
     }
 
+  .navbar-toggler {
+    border-color: #ffffff !important;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
   .navbar-toggler:focus {
       box-shadow: none !important;
       outline: none !important;

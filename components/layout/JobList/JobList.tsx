@@ -15,7 +15,9 @@ export default function JobList() {
           <Nav variant="pills" className="flex-column joblist-tabs">
             {experience.map((item) => (
               <Nav.Item key={item.company}>
-                <Nav.Link eventKey={item.company}>{item.company}</Nav.Link>
+                <Nav.Link as="button" type="button" eventKey={item.company}>
+                  {item.company}
+                </Nav.Link>
               </Nav.Item>
             ))}
           </Nav>
