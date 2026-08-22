@@ -28,8 +28,8 @@ section[id] {
 
   /* Accent — only for links / standout text */
   --accent: #3b82f6;
-  --accent-hover: #2563eb;
-  --accent-active: #1d4ed8;
+  --accent-hover: #60a5fa;
+  --accent-active: #93c5fd;
 
   /* Buttons */
   --button-bg: transparent;
@@ -105,7 +105,6 @@ section[id] {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 48px 40px;
-  box-shadow: var(--shadow-md);
 }
 
 .section-header {
@@ -132,7 +131,7 @@ section[id] {
 .section-title {
   font-family: var(--font-sans);
   color: var(--text-primary);
-  font-size: var(--text-2xl);
+  font-size: var(--text-title);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.01em;
@@ -141,15 +140,15 @@ section[id] {
 /* Optional action link shown on the right of a section header */
 .section-action {
   font-family: var(--font-sans);
-  font-size: var(--text-base);
+  font-size: var(--text-desc);
   font-weight: 600;
-  color: var(--teal);
+  color: var(--button-text);
   white-space: nowrap;
   transition: color 0.2s ease;
 }
 
 .section-action:hover {
-  color: var(--blue-hover) !important;
+  color: var(--accent) !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -171,13 +170,12 @@ section[id] {
 
 a {
   text-decoration: none !important;
-  color: var(--blue);
+  color: var(--accent);
 }
 
 a:hover {
-  color: var(--blue-hover);
+  color: var(--accent-active);
 }
-
 #content {
   width: 100%;
 }

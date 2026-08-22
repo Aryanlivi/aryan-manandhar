@@ -89,7 +89,7 @@ export default function JobList() {
                   className="joblist-role"
                   sx={{
                     fontFamily: "var(--font-sans)",
-                    fontSize: { xs: "var(--text-lg)", md: "var(--text-xl)" },
+                    fontSize: { xs: "var(--text-desc)", md: "var(--text-header)" },
                     fontWeight: 700,
                     color: "var(--text-primary)",
                   }}
