@@ -61,7 +61,7 @@
   font-family: var(--font-sans);
   font-size: var(--text-header);
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--text-secondary);
   margin: 0;
   max-width: 640px;
 }

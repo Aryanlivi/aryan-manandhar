@@ -109,7 +109,7 @@
   border-color: var(--button-bg) !important;
   color: var(--button-bg) !important;
   font-family: var(--font-sans);
-  font-weight: 600;
+  font-weight: 300;
   border-radius: 4px;
 }
 

@@ -22,15 +22,13 @@ export const site = {
   brand: "Aryan Manandhar",
   nav: [
     { label: "Home", href: "/#intro" },
-    // { label: "About", href: "/#about" },
     { label: "Experience", href: "/#experience" },
     { label: "Software", href: "/#projects" },
-    { label: "Blogs", href: "/#blogs" },
   ] as NavLink[],
   socials: [
-    { label: "Email", href: "mailto:aryanliviwork@gmail.com" },
-    { label: "GitHub", href: "https://github.com/aryanlivi" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/aryanlivi/" },
+    { label: "Email", href: "mailto:aryanlivi@gmail.com" },
+    { label: "GitHub", href: "https://github.com/Aryanlivi" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/aryan-manandhar/" },
   ] as SocialLink[],
 };
 
@@ -49,10 +47,10 @@ export const sections = {
 
 export const intro = {
   name: "Aryan Manandhar",
-  tagline: "Distributed System & Infrastructure Engineer . Mobile/Game Developer . Computer Engineer",
+  tagline: "Mobile & Game Developer . Licensed Computer Engineer . Distributed System Engineer ",
   cta: {
     label: "Say Hi",
-    href: "mailto:aryanliviwork@gmail.com",
+    href: "mailto:aryanlivi@gmail.com",
   },
   cv: {
     label: "Download CV",
@@ -67,10 +65,12 @@ export const intro = {
 export const about = {
   paragraphs: [
     {
-      text: `I am currently a Software Engineer at {monkeybyte}, where I help build mobile health apps to track personal health and compete in Challenges.Furthermore, 
-      I Fix Legacy Code, Optimize Game Systems.In my free time, I play Futsal , train Calisthenics.`,
+      text: `I am a Software Engineer and Licensed Computer Engineer based in Kathmandu, Nepal. Currently, I work remotely with {healthtek} 
+      building mobile health applications and with {monkeybyte} developing and optimizing game systems in Unreal Engine 5 and ActionScript.
+       I specialize in refactoring legacy codebases, real-time performance optimization, and cross-platform mobile systems.`,
       links: [
-        { text: "Monkeybyte", href: "https://www.google.com/" },
+        { text: "HealthTek Inc.", href: "https://www.google.com/" },
+        { text: "Monkey Byte Inc.", href: "https://www.google.com/" },
       ],
     },
   ] as AboutParagraph[],
@@ -86,23 +86,36 @@ type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    company: "Monkeybyte",
+    company: "HealthTek Inc.",
     role: "Software Engineer",
-    duration: "2024 — Present",
-    location: "Remote",
+    duration: "May 2025 — Present",
+    location: "Remote (Castro Valley, CA)",
     highlights: [
-      "Build and ship mobile health apps that help users track personal health and compete in challenges.",
-      "Refactor legacy code and optimize game systems to improve performance and maintainability.",
+      "Developed +Health Challenges App integrating native Android health features using Kotlin, React Native, and Health Connect SDK.",
+      "Built backend services with Node.js, Koa, Redis Cache, and MySQL deployed on Linux/Nginx servers.",
+      "Implemented timezone critical operations, dynamic app icons, OneSignal notifications, and QR code scanning with deep linking.",
+      "Modernized legacy codebases, resolved security vulnerabilities, and ensured HIPAA compliance.",
     ],
   },
   {
-    company: "Freelance",
-    role: "Mobile & Game Developer",
-    duration: "2022 — 2024",
-    location: "Remote",
+    company: "Monkey Byte Inc.",
+    role: "Game Developer",
+    duration: "May 2025 — Present",
+    location: "Remote (Castro Valley, CA)",
     highlights: [
-      "Delivered cross-platform mobile and game features end-to-end, from design to release.",
-      "Collaborated with clients to translate requirements into clean, testable implementations.",
+      "Ported legacy C games to UE5 C++, re-implementing core gameplay, enemy AI, and data-driven systems.",
+      "Upgraded Flash games with HARMAN AIR, custom Twitch OAuth, and high-frequency IRC message handling (3000+ msgs/sec).",
+      "Optimized build size by 50%+ using async loading and pointer references, and published upgraded titles to Steam.",
+    ],
+  },
+  {
+    company: "Real Time Solutions",
+    role: "Backend Engineer",
+    duration: "Dec 2024 — Feb 2025",
+    location: "Kathmandu, Nepal",
+    highlights: [
+      "Developed the YouTube-to-IDAQ system and Discharge Forecast project using Django, Celery, Redis, and PostgreSQL.",
+      "Hosted systems on Linux servers and managed concurrent processing of multiple YouTube live streams.",
     ],
   },
 ];
@@ -127,55 +140,45 @@ export type Software = {
  */
 export const software: Software[] = [
   {
-    name: "Habitual",
-    // tagline: "Productivity",
+    name: "Full Control",
+    tagline: "Game / AI",
     description:
-      "A habit tracking app with a focused dashboard, streaks, and simple routine planning.",
+      "A real-time pose detection fighting game built in UE5, utilizing MediaPipe and CNN+GRU models for action classification.",
     image: "/assets/images/Project.png",
-    video:"/assets/videos/LeftPunch.mp4",
-    github: "https://github.com/aryanlivi",
+    github: "https://github.com/Aryanlivi",
     demo: "#",
     featured: true,
     starred: true,
   },
   {
-    name: "Financery",
-    tagline: "Finance",
+    name: "PlayPals",
+    tagline: "Mobile App",
     description:
-      "A clean personal finance tracker for budgets, goals, and quick spending analysis.",
+      "A futsal opponent finder mobile app developed with Flutter, Django, PostgreSQL, Redis, and Google Maps API.",
     image: "/assets/images/Project.png",
-    github: "https://github.com/aryanlivi",
+    github: "https://github.com/Aryanlivi",
     demo: "#",
     featured: true,
     starred: true,
   },
   {
-    name: "Taski",
-    tagline: "Workflow",
+    name: "Macchindranath Raath Game",
+    tagline: "Game",
     description:
-      "A minimal task manager designed for daily planning, clarity, and low-friction capture.",
+      "A Global Game Jam project built with Godot to promote Nepali culture, featured on itch.io.",
     image: "/assets/images/Project.png",
-    github: "https://github.com/aryanlivi",
-    demo: "#",
+    github: "https://github.com/Aryanlivi",
+    demo: "https://itch.io",
     featured: true,
     starred: true,
   },
   {
-    name: "Linkly",
-    tagline: "Publishing",
+    name: "Fit Pose",
+    tagline: "Computer Vision",
     description:
-      "A link-sharing profile page with reusable cards, stats, and a modular content layout.",
+      "Real-time exercise tracking app developed for KIST Hackathon using MediaPipe, React, DRF, and PostgreSQL.",
     image: "/assets/images/Project.png",
-    github: "https://github.com/aryanlivi",
-    demo: "#",
-  },
-  {
-    name: "Weatherly",
-    tagline: "Utility",
-    description:
-      "A simple weather interface focused on readable forecasts and fast local interactions.",
-    image: "/assets/images/Project.png",
-    github: "https://github.com/aryanlivi",
+    github: "https://github.com/Aryanlivi",
     demo: "#",
   },
 ];

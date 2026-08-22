@@ -57,7 +57,7 @@
 .software-card-title {
   font-family: var(--font-sans);
   font-size: var(--text-subheader);
-  font-weight: 700;
+  font-weight: 300;
   color: var(--text-primary) !important;
   margin-bottom: 0.5rem;
 }
@@ -99,7 +99,7 @@
 
 .software-card-checkout {
   font-family: var(--font-sans);
-  font-weight: 600;
+  font-weight: 300;
   border-radius: 4px;
   border: 1px solid var(--foreground);
   color: var(--text-primary);
