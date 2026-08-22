@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Source_Serif_4 } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css"
 import "./layout.module.css"
 import NavBar from "@/components/layout/Navbar/Navbar";
 
-// Inter — self-hosted by Next.js (no external request at runtime).
-const inter = Inter({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
+  variable: "--font-source-serif",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={sourceSerif.variable}>
       <body>
         <NavBar />
         <main>{children}</main>

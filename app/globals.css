@@ -1,6 +1,6 @@
 /*
-  Fonts: Inter is self-hosted via next/font (see app/layout.tsx) and exposed
-  as the --font-inter CSS variable. No external font requests are needed.
+  Fonts: Source Serif is self-hosted via next/font (see app/layout.tsx) and exposed
+  as the --font-source-serif CSS variable. No external font requests are needed.
 */
 html {
   scroll-behavior: smooth;
@@ -10,113 +10,47 @@ html {
 section[id] {
   scroll-margin-top: 5rem;
 }
-
-/*
-  Design tokens — 3 primary colors, each with shades:
-    1. Teal   (primary accent)  — --teal
-    2. Blue   (secondary accent) — --blue
-    3. Neutral (base)            — --background / --surface / --text-*
-  No pure black (#000) or pure white (#fff) is used for backgrounds/text.
-*/
 :root {
-  /* Neutral (base) */
-  --background: #0f1419;
-  --foreground: #e6edf3;
-  --surface: #161d24;
-  --surface-hover: #1e2731;
-  --border: #2b3540;
+  /* Base */
+  --background: #222222;
+  --foreground: #ffffff;
 
-  /* Text (neutral shades) */
-  --text-primary: #e6edf3;
-  --text-secondary: #9aa7b4;
-  --text-muted: #6b7885;
+  /* Surface */
+  --surface: #111111;
+  --surface-hover: #181818;
+  --border: #3a3a3a;
 
-  /* Teal (primary accent) */
-  --teal: #5eead4;
-  --teal-hover: #99f6e4;
-  --teal-subtle: #134e4a;
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-muted: #777777;
 
-  /* Blue (secondary accent) */
-  --blue: #60a5fa;
-  --blue-hover: #93c5fd;
-  --blue-subtle: #172554;
+  /* Accent — only for links / standout text */
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --accent-active: #1d4ed8;
 
-  /* Interactive */
-  --link: var(--blue);
-  --link-hover: var(--blue-hover);
-
-  --button-bg: var(--teal);
-  --button-text: #0f1419;
-  --button-hover: var(--teal-hover);
-
-  --button-secondary-bg: var(--surface);
-  --button-secondary-hover: var(--surface-hover);
-
-  /* Lists */
-  --list-marker: var(--teal);
-
-  /* Typography — Inter (self-hosted via next/font) */
-  --font-sans: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
-
-  /* Type scale — clear hierarchy for headings, subtitles, body, captions */
-  --text-xs: 0.75rem;    /* 12px — labels, tags, meta */
-  --text-sm: 0.875rem;   /* 14px — small body, buttons */
-  --text-base: 1rem;     /* 16px — body text */
-  --text-md: 1.125rem;   /* 18px — lead / descriptions */
-  --text-lg: 1.375rem;   /* 22px — card titles */
-  --text-xl: 1.75rem;    /* 28px — subtitles */
-  --text-2xl: 2.25rem;   /* 36px — section titles */
-  --text-3xl: 3rem;      /* 48px — hero name */
-
-  /* Shadows — layered, subtle */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.4);
-}
-
-
-[data-theme="light"] {
-  /* Neutral (base) */
-  --background: #f4f6f8;
-  --foreground: #1a222b;
-  --surface: #ffffff;
-  --surface-hover: #eef1f4;
-  --border: #d5dbe1;
-
-  /* Text (neutral shades) */
-  --text-primary: #1a222b;
-  --text-secondary: #4b5563;
-  --text-muted: #6b7280;
-
-  /* Teal (primary accent) */
-  --teal: #0d9488;
-  --teal-hover: #0f766e;
-  --teal-subtle: #ccfbf1;
-
-  /* Blue (secondary accent) */
-  --blue: #2563eb;
-  --blue-hover: #1d4ed8;
-  --blue-subtle: #dbeafe;
-
-  /* Interactive */
-  --link: var(--blue);
-  --link-hover: var(--blue-hover);
-
-  --button-bg: var(--teal);
+  /* Buttons */
+  --button-bg: transparent;
+  --button-border: #b3b3b3;
   --button-text: #ffffff;
-  --button-hover: var(--teal-hover);
+  --button-hover-bg: #ffffff;
+  --button-hover-text: #222222;
 
-  --button-secondary-bg: var(--surface);
-  --button-secondary-hover: var(--surface-hover);
+  /* Typography */
+  --font-sans: var(
+    --font-source-serif
+  ), "Source Serif 4", Georgia, "Times New Roman", serif;
 
-  /* Lists */
-  --list-marker: var(--teal);
+  /* Type scale */
+  --text-title: 2rem;       /* 32px — page / major section titles */
+  --text-header: 1.25rem;   /* 20px — section headings */
+  --text-subheader: 1rem;   /* 16px — subtitles / secondary headings */
+  --text-desc: 0.9375rem;   /* 15px — body / descriptions */
+  --text-caption: 0.75rem;  /* 12px — metadata / labels */
 
-  /* Shadows — lighter for the light theme */
-  --shadow-sm: 0 1px 2px rgba(15, 23, 32, 0.08);
-  --shadow-md: 0 4px 12px rgba(15, 23, 32, 0.1);
-  --shadow-lg: 0 12px 32px rgba(15, 23, 32, 0.14);
 }
+
 
 
 [id] {

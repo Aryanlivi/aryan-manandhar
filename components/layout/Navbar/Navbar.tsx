@@ -19,7 +19,6 @@ const socialIcons = {
 const NavBar = () => {
   const router = useRouter();
   const [expanded, setExpanded] = useState(false);
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
 
   // Smooth-scroll to a section anchor, navigating home first if needed.
   const scrollToSection = (href: string) => {
@@ -41,19 +40,8 @@ const NavBar = () => {
     setExpanded(false);
   };
 
-  // Apply the theme to <html> and persist the choice.
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
 
-  // Restore a previously saved theme on first load.
-  useEffect(() => {
-    const saved = localStorage.getItem("theme") as "dark" | "light" | null;
-    if (saved === "light" || saved === "dark") {
-      setTheme(saved);
-    }
-  }, []);
+
 
   // Lock body scroll while the mobile menu is open, restore position on close.
   useEffect(() => {
@@ -78,7 +66,6 @@ const NavBar = () => {
       fixed="top"
       expand="lg"
       className="navbar"
-      data-bs-theme={theme}
       expanded={expanded}
       onToggle={setExpanded}
     >
@@ -113,18 +100,6 @@ const NavBar = () => {
             ))}
           </Nav>
         </Navbar.Collapse>
-        <button
-          type="button"
-          className="theme-toggle"
-          onClick={() => setTheme((t) => (t === "dark" ? "light" : "dark"))}
-          aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-        >
-          {theme === "dark" ? (
-            <LightModeIcon style={{ fontSize: 20 }} />
-          ) : (
-            <DarkModeIcon style={{ fontSize: 20 }} />
-          )}
-        </button>
       </Container>
     </Navbar>
   );
