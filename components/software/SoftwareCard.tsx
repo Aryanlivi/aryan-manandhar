@@ -30,7 +30,7 @@ export default function SoftwareCard({ item }: { item: Software }) {
       </Card.Body>
       <Card.Footer className="software-card-footer">
         <a
-          href={item.link}
+          href={item.github}
           target="_blank"
           rel="noreferrer"
           className="software-card-launch"
@@ -40,7 +40,7 @@ export default function SoftwareCard({ item }: { item: Software }) {
         </a>
 
         <Button
-          href={item.demo}
+          href={item.slug ? `/projectlog/${item.slug}` : item.demo}
           variant="outline-light"
           size="sm"
           className="software-card-log"

@@ -1,3 +1,5 @@
+import { healthChallenges } from "./health-challenges";
+
 type NavLink = {
   label: string;
   href: string;
@@ -131,6 +133,8 @@ export type Software = {
   starred?: boolean;
   /** Optional video URL (mp4/webm) shown in the carousel instead of the image. */
   video?: string;
+  /** Matching ProjectLog slug — when set, "Project Log" opens /projectlog/{slug} instead of `demo`. */
+  slug?: string;
 };
 
 /**
@@ -162,15 +166,16 @@ export const software: Software[] = [
     starred: true,
   },
   {
-    name: "Macchindranath Raath Game",
-    tagline: "Game",
+    name: "Health Challenges",
+    tagline: "Mobile App",
     description:
-      "A Global Game Jam project built with Godot to promote Nepali culture, featured on itch.io.",
+      "A health and activity challenge platform for organizations.",
     image: "/assets/images/HealthChallenges.png",
     github: "https://github.com/Aryanlivi",
     demo: "https://apps.apple.com/us/app/health-challenges/id6743952494",
     featured: true,
     starred: true,
+    slug: "health-challenges",
   },
   {
     name: "Fit Pose",
@@ -200,3 +205,54 @@ export const software: Software[] = [
     demo: "#",
   },
 ];
+
+/**
+ * Project Log — employer-facing engineering deep-dives.
+ * Each project lives in its own /data/{slug}.ts file and is aggregated
+ * into `projectLogs` below. Add a new project by adding one entry there.
+ */
+export type ProjectMediaItem = {
+  type: "image" | "video";
+  src: string;
+  alt?: string;
+  caption?: string;
+};
+
+export type ProjectHighlight = {
+  category: string;
+  title: string;
+  /** Only set this when a real, measured before/after exists. Never invent one. */
+  metric?: { before: string; after: string };
+  description: string;
+};
+
+export type ProjectContribution = {
+  title: string;
+  description: string;
+  technologies?: string[];
+};
+
+export type ProjectLinks = {
+  github?: string;
+  live?: string;
+  appStore?: string;
+  playStore?: string;
+};
+
+export type ProjectLog = {
+  slug: string;
+  title: string;
+  description: string;
+  role: string;
+  status: string;
+  duration?: string;
+  technologies: string[];
+  links?: ProjectLinks;
+  hero?: ProjectMediaItem;
+  highlights: ProjectHighlight[];
+  contributions?: ProjectContribution[];
+  media?: ProjectMediaItem[];
+  learned?: string[];
+};
+
+export const projectLogs: ProjectLog[] = [healthChallenges];
