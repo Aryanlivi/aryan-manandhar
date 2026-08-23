@@ -80,7 +80,7 @@
   padding: 0.9rem 1.25rem;
 }
 
-.software-card-github {
+.software-card-launch {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -92,12 +92,12 @@
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-.software-card-github:hover {
-  color: var(--accent) !important;
-  border-color: var(--accent);
+.software-card-launch:hover {
+  color:black !important;
+  background-color: white;
 }
 
-.software-card-checkout {
+.software-card-log {
   font-family: var(--font-sans);
   font-weight: 300;
   border-radius: 4px;

@@ -1,7 +1,8 @@
 "use client";
 
 import { Button, Card } from "react-bootstrap";
-import GitHubIcon from "@mui/icons-material/GitHub";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+import { Launch } from "@mui/icons-material";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import type { Software } from "@/data/site";
 import "./SoftwareCard.css";
@@ -29,21 +30,22 @@ export default function SoftwareCard({ item }: { item: Software }) {
       </Card.Body>
       <Card.Footer className="software-card-footer">
         <a
-          href={item.github}
+          href={item.link}
           target="_blank"
           rel="noreferrer"
-          className="software-card-github"
-          aria-label={`View ${item.name} on GitHub`}
+          className="software-card-launch"
+          aria-label={`View ${item.name}`}
         >
-          <GitHubIcon fontSize="small" />
+          <Launch fontSize="small" />
         </a>
+
         <Button
           href={item.demo}
           variant="outline-light"
           size="sm"
-          className="software-card-checkout"
+          className="software-card-log"
         >
-          Check Out
+          Project Log
         </Button>
       </Card.Footer>
     </Card>
