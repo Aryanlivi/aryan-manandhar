@@ -18,9 +18,9 @@ export default function ProjectNavigation({
           </Link>
         )}
       </div>
-      <Link href="/projectlog" className="pl-nav-back">
+      {/* <Link href="/projectlog" className="pl-nav-back">
         Back to Projects
-      </Link>
+      </Link> */}
       <div className="pl-nav-side pl-nav-side-right">
         {next && (
           <Link href={`/projectlog/${next.slug}`} className="pl-nav-link">

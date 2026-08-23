@@ -1,3 +1,4 @@
+import { fullControl } from "./full-control";
 import { healthChallenges } from "./health-challenges";
 
 type NavLink = {
@@ -150,6 +151,7 @@ export const software: Software[] = [
       "A real-time pose detection fighting game built in UE5, utilizing MediaPipe and CNN+GRU models for action classification.",
     image: "/assets/images/Project.png",
     github: "https://github.com/Aryanlivi",
+    slug: "full-control", 
     demo: "#",
     featured: true,
     starred: true,
@@ -172,10 +174,11 @@ export const software: Software[] = [
       "A health and activity challenge platform for organizations.",
     image: "/assets/images/HealthChallenges.png",
     github: "https://github.com/Aryanlivi",
+    slug: "health-challenges", 
     demo: "https://apps.apple.com/us/app/health-challenges/id6743952494",
     featured: true,
     starred: true,
-    slug: "health-challenges",
+
   },
   {
     name: "Fit Pose",
@@ -255,4 +258,4 @@ export type ProjectLog = {
   learned?: string[];
 };
 
-export const projectLogs: ProjectLog[] = [healthChallenges];
+export const projectLogs: ProjectLog[] = [healthChallenges,fullControl];
