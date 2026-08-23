@@ -1,4 +1,5 @@
 import type { ProjectLog } from "./site";
+import { BASE_PATH } from "@/lib/utils";
 
 export const healthChallenges: ProjectLog = {
   slug: "health-challenges",
@@ -23,7 +24,7 @@ export const healthChallenges: ProjectLog = {
   },
   hero: {
     type: "image",
-    src: "/assets/images/HealthChallenges.png",
+    src: `${BASE_PATH}/assets/images/HealthChallenges.png`,
     alt: "Health Challenges application",
   },
   highlights: [

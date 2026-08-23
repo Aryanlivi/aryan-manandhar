@@ -1,5 +1,6 @@
 import { fullControl } from "./full-control";
 import { healthChallenges } from "./health-challenges";
+import { BASE_PATH } from "@/lib/utils";
 
 type NavLink = {
   label: string;
@@ -57,10 +58,10 @@ export const intro = {
   },
   cv: {
     label: "Download CV",
-    href: "/assets/cv.pdf",
+    href: `${BASE_PATH}/assets/cv.pdf`,
   },
   photo: {
-    src: "/assets/images/me-nobg.png",
+    src: `${BASE_PATH}/assets/images/me-nobg.png`,
     alt: "Aryan Manandhar",
   },
 };
@@ -149,7 +150,7 @@ export const software: Software[] = [
     tagline: "Game / AI",
     description:
       "A real-time pose detection fighting game built in UE5, utilizing MediaPipe and CNN+GRU models for action classification.",
-    image: "/assets/images/Project.png",
+    image: `${BASE_PATH}/assets/images/Project.png`,
     github: "https://github.com/Aryanlivi",
     slug: "full-control", 
     demo: "#",
@@ -161,7 +162,7 @@ export const software: Software[] = [
     tagline: "Mobile App",
     description:
       "A futsal opponent finder mobile app developed with Flutter, Django, PostgreSQL, Redis, and Google Maps API.",
-    image: "/assets/images/DoodleWhat.png",
+    image: `${BASE_PATH}/assets/images/DoodleWhat.png`,
     github: "https://github.com/Aryanlivi",
     demo: "#",
     featured: true,
@@ -172,7 +173,7 @@ export const software: Software[] = [
     tagline: "Mobile App",
     description:
       "A health and activity challenge platform for organizations.",
-    image: "/assets/images/HealthChallenges.png",
+    image: `${BASE_PATH}/assets/images/HealthChallenges.png`,
     github: "https://github.com/Aryanlivi",
     slug: "health-challenges", 
     demo: "https://apps.apple.com/us/app/health-challenges/id6743952494",
@@ -185,7 +186,7 @@ export const software: Software[] = [
     tagline: "Computer Vision",
     description:
       "Real-time exercise tracking app developed for KIST Hackathon using MediaPipe, React, DRF, and PostgreSQL.",
-    image: "/assets/images/BouncyBean.png",
+    image: `${BASE_PATH}/assets/images/BouncyBean.png`,
     github: "https://github.com/Aryanlivi",
     demo: "#",
   },
@@ -194,7 +195,7 @@ export const software: Software[] = [
     tagline: "Computer Vision",
     description:
       "Real-time exercise tracking app developed for KIST Hackathon using MediaPipe, React, DRF, and PostgreSQL.",
-    image: "/assets/images/GalacticPatrol.png",
+    image: `${BASE_PATH}/assets/images/GalacticPatrol.png`,
     github: "https://github.com/Aryanlivi",
     demo: "#",
   },
@@ -203,7 +204,7 @@ export const software: Software[] = [
     tagline: "Computer Vision",
     description:
       "Real-time exercise tracking app developed for KIST Hackathon using MediaPipe, React, DRF, and PostgreSQL.",
-    image: "/assets/images/CatapultGodot.png",
+    image: `${BASE_PATH}/assets/images/CatapultGodot.png`,
     github: "https://github.com/Aryanlivi",
     demo: "#",
   },

@@ -2,7 +2,7 @@
 const nextConfig = {
   typedRoutes: true,
   output: "export",
-  basePath: "/aryan-manandhar",
+  basePath: process.env.NODE_ENV === "production" ? "/aryan-manandhar" : "",
   images: { unoptimized: true },
 };
 
